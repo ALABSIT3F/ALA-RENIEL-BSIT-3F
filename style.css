@@ -1,0 +1,177 @@
+body{
+    background-color: rgb(0, 83, 155);
+    color: aliceblue;
+}
+
+.Name{
+    margin-top: 70px;
+    margin-right: 120px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+}
+img{
+    position:absolute;
+    top: 60px;
+    right: 20px;
+    width: 100px;
+    length: 150px;
+}
+h2{
+    margin-top: 150px;
+    margin-left: 60px;
+    border: 5px solid black;
+    width: 150px;
+    font-size: 25px;
+}
+h3{
+    margin-top: 50px;
+    margin-left: 60px;
+    border: 5px solid black;
+    width: 150px;
+    font-size: 25px;
+}
+.ABOUTME{
+    position:absolute;
+    top: 250px;
+    right: 250px;
+    width: 500px;
+    font-size: 20px;
+}
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Styling for the Name section */
+.Name {
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.Name h1 {
+    font-size: 2.5em;
+    color: #4CAF50; /* Green color */
+    margin-bottom: 10px;
+    animation: slideIn 1.5s ease-out;
+}
+
+.Name img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #4CAF50;
+    animation: bounce 2s infinite;
+}
+
+/* Styling for headings */
+h2, h3 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #2196F3; /* Blue color */
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #FF5722; /* Orange color */
+}
+
+/* About Me Section */
+.ABOUTME {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideUp 2s ease-out;
+}
+
+.ABOUTME p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+/* Keyframe Animations */
+
+/* Fade in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide in effect from the left */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Bounce animation for the image */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Slide up effect for content */
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Add responsiveness */
+@media (max-width: 600px) {
+    .ABOUTME {
+        width: 95%;
+    }
+
+    .Name h1 {
+        font-size: 2em;
+    }
+
+    .Name img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+
+    .ABOUTME p {
+        font-size: 1em;
+    }
+}
